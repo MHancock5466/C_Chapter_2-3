@@ -42,7 +42,7 @@ int main()
 	cout << "Temperature at 12:00 pm:		" << temp2 << " degrees F		" << convert(temp2) << " degrees C" << endl;
 	cout << "Temperature at 5:00 pm: 		" << temp3 << " degrees F		" << convert(temp3) << " degrees C" << endl;
 
-	system("Pause");
+	system("pause");
 	return 0;
 }
 
