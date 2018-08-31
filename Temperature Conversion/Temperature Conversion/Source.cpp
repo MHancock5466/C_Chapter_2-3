@@ -6,6 +6,12 @@
 #include <string>
 using namespace std;
 
+double convert(double temp)
+{
+	double output = (temp - 32) * 5 / 9;
+	return output;
+}
+
 int main()
 {
 	double temp1 = 0;
@@ -32,10 +38,11 @@ int main()
 		cin >> temp3;
 	} 
 
-	cout << "Temperature at 8:00 am: 		" << temp1 << " degrees F.		" << (temp1-32)*5/9 << " degrees C." << endl;
-	cout << "Temperature at 12:00 pm:		" << temp2 << " degrees F.		" << (temp2-32)*5/9 << " degrees C." << endl;
-	cout << "Temperature at 5:00 pm: 		" << temp3 << " degrees F.		" << (temp3-32)*5/9 << " degrees C." << endl;
+	cout << "Temperature at 8:00 am: 		" << temp1 << " degrees F		" << convert(temp1) << " degrees C" << endl;
+	cout << "Temperature at 12:00 pm:		" << temp2 << " degrees F		" << convert(temp2) << " degrees C" << endl;
+	cout << "Temperature at 5:00 pm: 		" << temp3 << " degrees F		" << convert(temp3) << " degrees C" << endl;
 
 	system("Pause");
 	return 0;
 }
+
