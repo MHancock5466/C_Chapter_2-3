@@ -1,7 +1,6 @@
 //Dozen Egg Counter
 //Author: Mason Hancock
 //Date: 09/04/2018
-
 #include <iostream>
 #include <string>
 using namespace std;
