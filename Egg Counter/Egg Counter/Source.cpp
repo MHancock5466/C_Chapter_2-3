@@ -21,6 +21,7 @@ double findCost(int eggs)
 {
 	int dozen = convertToDozen(eggs);
 	int remaining = convertToRemaining(eggs);
+
 	if (eggs > 120)
 	{
 		double cost = dozen * 1.50 + remaining * 0.25;
