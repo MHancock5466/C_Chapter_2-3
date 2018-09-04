@@ -40,7 +40,7 @@ int main()
 	
 	cout << "How many eggs are you purchasing? ";
 	cin >> eggs;
-	cout << "Your bill will be: $" << findCost(eggs) << endl;
+	cout << "Your bill will be: $" << findCost(eggs) << " for " << convertToDozen(eggs) << " dozen and " << convertToRemaining(eggs) << " eggs." << endl;
 
 	system("pause");
 	return 0;
