@@ -24,6 +24,17 @@ int main()
 	double fajitas = 0;
 	double drinks = 0;
 
+	cout << "*********************************************************" << endl;
+	cout << "*                                              *         **" << endl;
+	cout << "*           DELGADOS TACO TRUCK                *           **" << endl;
+	cout << "*                                              *             **" << endl;
+	cout << "*           -------------------                *               **" << endl;
+	cout << "*           |                 |                *                 **" << endl;
+	cout << "*           |                 |                *" << endl;
+	cout << "*           -------------------                *" << endl;
+	cout << "*                                              *" << endl;
+	cout << "*                                              *" << endl;
+
 	cout << "How many tacos would you like? ";
 	cin >> tacos;
 	cout << "How many burritos would you like? ";
