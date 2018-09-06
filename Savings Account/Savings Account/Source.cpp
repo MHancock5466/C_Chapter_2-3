@@ -21,8 +21,7 @@ int main()
 	cin >> earnings;	
 	cout << "What percent of your income are you saving? ";
 	cin >> percentageSaving;
-	cout << "How much did you receive from your bonus check? ";
-	totalSavings = totalSavings + 100;
+	totalSavings = savings(earnings, percentageSaving) + 100;
 
 	cout << "Your Savings This Year Totals: $" << totalSavings << endl;
 
