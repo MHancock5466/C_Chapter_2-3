@@ -15,7 +15,6 @@ int main()
 {
 	double earnings = 0;
 	double percentageSaving = 0;
-	double bonus = 0;
 	double totalSavings = 0;
 
 	cout << "How much are you paid per check? ";
@@ -23,11 +22,7 @@ int main()
 	cout << "What percent of your income are you saving? ";
 	cin >> percentageSaving;
 	cout << "How much did you receive from your bonus check? ";
-	cin >> bonus;
-	if (bonus >= 100)
-		totalSavings = savings(earnings, percentageSaving) + 100;
-	else
-		totalSavings = savings(earnings, percentageSaving) + bonus;
+	totalSavings = totalSavings + 100;
 
 	cout << "Your Savings This Year Totals: $" << totalSavings << endl;
 
