@@ -11,7 +11,7 @@ double taxes(double pay)
 	double socialSecurtyMedicareTax = 0.08;
 	double stateTax = 0.04;
 
-	double payAfterTaxes = pay - pay * federalWithholdingTax - pay * socialSecurtyMedicareTax - pay * stateTax;
+	double payAfterTaxes = pay - pay * (federalWithholdingTax + socialSecurtyMedicareTax + stateTax);
 	return payAfterTaxes;
 }
 
