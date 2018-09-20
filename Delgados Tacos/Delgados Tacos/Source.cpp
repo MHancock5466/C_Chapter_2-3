@@ -29,6 +29,7 @@ int main()
 	int enchiladas = 0;
 	int fajitas = 0;
 	int drinks = 0;
+	int orderNumber;
 
 	cout << "*********************************************************" << endl;
 	cout << "*                                              *         **" << endl;
@@ -44,17 +45,38 @@ int main()
 	cout << "        **      **                  **     **            **     **" << endl;
 	cout << "          ** **                       ** **                ** **" << endl;
 
-	cout << "How many tacos would you like? ";
-	cin >> tacos;
-	cout << "How many burritos would you like? ";
-	cin >> burritos;
-	cout << "How many enchiladas would you like? ";
-	cin >> enchiladas;
-	cout << "How many fajitas would you like? ";
-	cin >> fajitas;
-	cout << "How many drinks would you like? ";
-	cin >> drinks;
-	cout << "Subtotal: $" << subCost(tacos, burritos, enchiladas, fajitas, drinks) << endl << 
+	do {
+		cout << "\nWhat would you like to order?\n1 - Taco\n2 - Burrito\n3 - Enchilada\n4 - Fajita\n5 - Drink\n6 - Checkout\nYour order number: ";
+		cin >> orderNumber;
+		switch (orderNumber) {
+		case 1:
+			cout << "\nHow many tacos would you like? ";
+			cin >> tacos;
+			break;
+		case 2: 
+			cout << "\nHow many burritos would you like? ";
+			cin >> burritos;
+			break;
+		case 3: 
+			cout << "\nHow many enchiladas would you like? ";
+			cin >> enchiladas;
+			break;
+		case 4: 
+			cout << "\nHow many fajitas would you like? ";
+			cin >> fajitas;
+			break;
+		case 5: 
+			cout << "\nHow many drinks would you like? ";
+			cin >> drinks;
+			break;
+		case 6: 
+			break;
+		default:
+			cout << "\nNot a valid input" << endl;
+		}
+	} while (orderNumber != 6);
+
+	cout << "\nSubtotal: $" << subCost(tacos, burritos, enchiladas, fajitas, drinks) << endl << 
 		"Total: $" << totalCost(tacos, burritos, enchiladas, fajitas, drinks) << endl;
 
 	system("pause");
